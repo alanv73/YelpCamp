@@ -23,7 +23,10 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.Promise = Promise;
 
-mongoose.connect('mongodb://localhost/yelp_camp_v12');
+// mongoose.connect('mongodb://localhost/yelp_camp_v12');
+mongoose.connect(
+	'mongodb+srv://alanv73:mongodbn3sov@cluster0-qtqk3.mongodb.net/yelp_camp_v12?retryWrites=true&w=majority'
+);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
