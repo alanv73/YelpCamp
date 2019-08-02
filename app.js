@@ -25,7 +25,7 @@ mongoose.Promise = Promise;
 
 // mongoose.connect('mongodb://localhost/yelp_camp_v12');
 // mongoose.connect(
-// 	'mongodb+srv://alanv73:mongodbn3sov@cluster0-qtqk3.mongodb.net/yelp_camp_v12?retryWrites=true&w=majority'
+// 	'mongodb+srv://alanv73:<password>@cluster0-qtqk3.mongodb.net/yelp_camp_v12?retryWrites=true&w=majority'
 // );
 var url =
 	process.env.DATABASEURL || 'mongodb://localhost/yelp_camp_v12';
